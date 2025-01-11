@@ -6,14 +6,14 @@ You are given an array arr[] of non-negative integers. Your task is to move all 
 class Solution:
 	def pushZerosToEnd(self,arr):
     	# code here
-      count=0
-      for i in range(len(arr)):
-      if arr[i]!=0:
-        arr[count],arr[i]=arr[i],arr[count]#swap
-        count+=1
-        #time complexity n and space complexity n
-      '''
-      code wih space complexity 2n
+            count=0
+            for i in range(len(arr)):
+              if arr[i]!=0:
+                arr[count],arr[i]=arr[i],arr[count]#swap
+                count+=1
+        #time complexity n and space complexity 
+        # code wih space complexity 2n
+        '''
       count=0
       n=len(arr)
       temp=[0]*n
@@ -24,8 +24,7 @@ class Solution:
       while(count!=n):
         temp[count]=0
         count+=1
-      
-      '''
+       '''
 
 #{ 
  # Driver Code Starts
