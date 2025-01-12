@@ -6,6 +6,6 @@ class Solution:
         # code here
       n=len(arr)
       for i in range(n//2):
-        arr[i],arr[n-1-i]=arr[n-1-i],arr[i]
+        arr[i],arr[n-1-i]=arr[n-1-i],arr[i]#swaping first and last
     
         #time complexity n and space complexity 1
