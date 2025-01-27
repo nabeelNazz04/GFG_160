@@ -1,5 +1,3 @@
-# KMP algorithm for pattern string
-# if you add the string to itself all the possible rotations will appear on that
 def constructLps(pat, lps):
     len_ = 0  # Length of the longest prefix suffix
     m = len(pat)  # Length of the pattern
@@ -44,3 +42,21 @@ class Solution:
                     i += 1  # No match, move to the next character in the text
 
         return res  # Return the list of starting indices
+
+def main():
+    # Input
+    txt = "abcab"
+    pat = "ab"
+
+    # Create an instance of the Solution class
+    sol = Solution()
+
+    # Call the search method to find all occurrences of the pattern in the text
+    result = sol.search(pat, txt)
+
+    # Print the output
+    print("Output:", result)
+
+# Run the main function
+if __name__ == "__main__":
+    main()
